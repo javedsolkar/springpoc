@@ -2,6 +2,8 @@ package com.example.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity(name = "mmst_phyaddress")
@@ -9,6 +11,7 @@ public class PhysicalAddress {
 
 	@Column(name = "mmst_phyaddress_id")
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String id;
 
 	@Column(name = "sname")

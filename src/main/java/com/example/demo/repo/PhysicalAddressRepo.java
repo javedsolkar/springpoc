@@ -13,7 +13,6 @@ public class PhysicalAddressRepo {
 	PhysicalAddressJpaRepo physicalAddressJpaRepo;
 
 	public Iterable<PhysicalAddress> getAllPhysicalAddress() {
-
 		return physicalAddressJpaRepo.findAll();
 	}
 
